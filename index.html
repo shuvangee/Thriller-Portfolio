@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case File: Shivangi</title>
+  <meta name="description" content="Thriller-style interactive portfolio — the investigation continues." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <h1 id="name">SHIVANGI SETH</h1>
+    <p class="tag">CASE #2027 — STATUS: OPEN INVESTIGATION</p>
+    <button class="cta" data-scroll="#desktop">Begin investigation ↓</button>
+  </header>
+
+  <!-- Desktop with folders -->
+  <main id="desktop" class="desktop">
+    <ul class="folders">
+      <li class="folder" data-open="case-files"><img src="assets/icons/folder-case.svg" alt=""><span>Case Files</span></li>
+      <li class="folder" data-open="evidence"><img src="assets/icons/folder-evidence.svg" alt=""><span>Evidence</span></li>
+      <li class="folder" data-open="recordings"><img src="assets/icons/folder-audio.svg" alt=""><span>Recordings</span></li>
+      <li class="folder" data-open="photos"><img src="assets/icons/folder-photos.svg" alt=""><span>Photos</span></li>
+      <li class="folder" data-open="profile"><img src="assets/icons/folder-profile.svg" alt=""><span>Profile</span></li>
+      <li class="folder" data-open="contact"><img src="assets/icons/folder-contact.svg" alt=""><span>Terminal</span></li>
+    </ul>
+  </main>
+
+  <!-- Modal window -->
+  <section id="window" class="window" aria-hidden="true">
+    <div class="titlebar">
+      <span id="window-title">Untitled</span>
+      <button class="close" aria-label="Close">×</button>
+    </div>
+    <div class="content"></div>
+  </section>
+
+  <footer class="outro">
+    <p>STATUS: UNSOLVED — new leads incoming.</p>
+  </footer>
+</body>
+</html>

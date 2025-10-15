@@ -1,0 +1,33 @@
+:root{
+  --bg:#0b0b0b; --ink:#c41e3a; --paper:#e6ddcf; --muted:#8b8e93; --ui:#121212;
+}
+*{box-sizing:border-box} html,body{height:100%} body{margin:0;background:var(--bg);color:var(--paper);font-family:Inter,system-ui,Arial,sans-serif}
+
+/* Hero */
+.hero{min-height:70vh;display:grid;place-content:center;gap:10px;text-align:center}
+#name{font-family:"Special Elite", ui-monospace, monospace;font-size:clamp(32px,7vw,84px);letter-spacing:.15em;margin:0;
+  position:relative; padding-bottom:.35rem;}
+#name::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--paper);box-shadow:0 8px 28px var(--ink);}
+.tag{opacity:.85}
+.cta{margin:16px auto 0;background:transparent;border:1px solid var(--paper);color:var(--paper);padding:8px 12px;border-radius:8px;cursor:pointer}
+
+/* Desktop */
+.desktop{padding:48px 20px 80px;}
+.folders{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:20px;max-width:1100px;margin:0 auto;list-style:none;padding:0}
+.folder{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px;background:var(--ui);border:1px solid #222;border-radius:12px;
+  cursor:pointer;transition:transform .18s ease, box-shadow .18s ease}
+.folder:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.folder img{width:42px;height:42px}
+
+/* Modal window */
+.window{position:fixed;inset:6% 6% auto 6%;min-height:60vh;background:#0f0f0f;border:1px solid #242424;border-radius:12px;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);display:none}
+.window.open{display:block}
+.titlebar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#0b0b0b;border-bottom:1px solid #242424}
+.titlebar .close{background:#2a2a2a;color:#fff;border:0;width:28px;height:28px;border-radius:6px;cursor:pointer}
+.content{padding:16px;line-height:1.6}
+.content h3{margin:.25rem 0 0;font-family:"Special Elite",ui-monospace,monospace}
+.content .report{background:linear-gradient(#151515,#101010);border:1px solid #262626;border-radius:10px;padding:14px;margin:10px 0}
+
+/* Footer */
+.outro{padding:40px 16px;text-align:center;color:var(--muted)}
